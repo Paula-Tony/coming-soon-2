@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif; /* 300, 400, 600 */
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5rem;
+}
+@media (width < 992px) {
+  .wrapper {
+    gap: 3rem;
+  }
+}
+@media (width < 768px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+}
+
+.content {
+  width: 55%;
+  height: 100vh;
+  padding: 5rem 5rem 5rem 8rem;
+}
+@media (width < 1504px) {
+  .content {
+    padding: 5rem;
+  }
+}
+@media (width < 992px) {
+  .content {
+    padding: 3rem;
+  }
+}
+@media (width < 768px) {
+  .content {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    height: auto;
+  }
+}
+.content__logo {
+  width: 200px;
+  margin-bottom: 8rem;
+}
+@media (width < 1801px) {
+  .content__logo {
+    margin-bottom: 5rem;
+  }
+}
+@media (width < 768px) {
+  .content__logo {
+    margin-bottom: 25rem;
+  }
+}
+.content__logo img {
+  width: 100%;
+}
+.content__title {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 1rem;
+}
+@media (width < 1419px) {
+  .content__title {
+    font-size: 5rem;
+  }
+}
+@media (width < 1085px) {
+  .content__title {
+    font-size: 4rem;
+  }
+}
+@media (width < 768px) {
+  .content__title {
+    font-size: 2.5rem;
+  }
+}
+.content__title strong {
+  display: block;
+  color: hsl(0, 6%, 24%);
+}
+.content__description {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: hsl(0, 6%, 24%);
+  margin-bottom: 2rem;
+  text-wrap: balance;
+}
+@media (width < 768px) {
+  .content__description {
+    font-size: 1.5rem;
+  }
+}
+.content form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 1px solid rgba(206, 151, 151, 0.5);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+.content form > div input {
+  padding: 1rem 2rem;
+  border: none;
+  width: 100%;
+}
+.content form > div input:focus {
+  outline: none;
+}
+.content form > div input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.content form > div input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.content form > div input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.content form > div input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.content form > div input:focus::placeholder {
+  opacity: 0;
+}
+.content form > div input::-webkit-input-placeholder {
+  font-size: 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content form > div input::-moz-placeholder {
+  font-size: 1rem;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content form > div input:-ms-input-placeholder {
+  font-size: 1rem;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content form > div input::-ms-input-placeholder {
+  font-size: 1rem;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content form > div input::placeholder {
+  font-size: 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content form > div > img {
+  display: none;
+  margin-right: 10px;
+}
+.content form > div button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content form > div button:hover {
+  -webkit-box-shadow: 0 0 30px 0 hsl(0, 93%, 68%);
+          box-shadow: 0 0 30px 0 hsl(0, 93%, 68%);
+}
+.content form p {
+  padding-left: 2rem;
+  color: hsl(0, 93%, 68%);
+  display: none;
+  text-align: left;
+}
+
+.img {
+  width: 45%;
+}
+@media (width < 768px) {
+  .img {
+    width: 100%;
+    position: absolute;
+    top: 8rem;
+  }
+}
+.img img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (width < 768px) {
+  .img img {
+    height: 20rem;
+    -o-object-position: center top;
+       object-position: center top;
+  }
+}
